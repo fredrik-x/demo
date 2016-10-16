@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>My welcome</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+
+	$(function(){
+
+   		// jQuery methods go here...
+                $.get("api/name", function(data, status){
+                   $("#myspan").html(data.surname);        
+    		});
+	
+
+});
+  </script>
+</head>
+
+<body>
+<h1>Hello Mr. <span id="myspan"></span></h1>
+</body>
+
+</html>
+
+
