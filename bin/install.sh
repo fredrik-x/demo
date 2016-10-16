@@ -13,7 +13,7 @@ apt-get install nodejs-legacy -qq
 cd /var/www
 
 npm install pm2@latest -g
-pm2 start app/app.js
+pm2 start app/app.js --watch /var/www/app/
 
 cp bin/nginx.default /etc/nginx/sites-enabled/default
 service nginx restart
